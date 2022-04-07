@@ -1,9 +1,16 @@
+# Run following commands to build and launch simulation after git clone
+
+```
+source /opt/ros/foxy/setup.bash
+
+cd pybullet-imu-viz
+
+colcon build
+
+source install/setup.bash
+
 ros2 launch imu_listener imu_pybullet.launch.py
 
-ros2 daemon stop; ros2 daemon start;
+```
 
-ros2 bag record /imu/data -o pybullet_imu_data_rosbag
-
-ros2 bag info pybullet_imu_data_rosbag/
-
-ros2 bag play pybullet_imu_data_rosbag/
+see the blog article here - 
